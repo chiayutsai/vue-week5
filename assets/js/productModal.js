@@ -15,9 +15,9 @@ export default {
       qty: 1,
     }
   },
+
   mounted() {
     this.modal = new bootstrap.Modal(this.$refs.modal)
-    this.openModal()
   },
   methods: {
     openModal() {
@@ -25,6 +25,7 @@ export default {
     },
     hideModal() {
       this.modal.hide()
+      this.qty = 1
     },
   },
 }
